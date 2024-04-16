@@ -1,3 +1,11 @@
+# custom ignores
+data/
+example/
+log_dir/
+model_dir/
+useful-papers/
+todo.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
