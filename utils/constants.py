@@ -1,6 +1,6 @@
 
 BATCH_SIZE = 32
-IMAGE_SIZE = (64, 64)  # although not ideal this size greatly reduces the training time
+IMAGE_SIZE = (224, 224)  # although not ideal this size greatly reduces the training time
 INPUT_SHAPE = IMAGE_SIZE + (3,)  # plus 3 because images are rgb
 
 CLASS_INT_TO_STR = {
