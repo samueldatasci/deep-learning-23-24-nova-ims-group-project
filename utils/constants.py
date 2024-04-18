@@ -1,8 +1,4 @@
 
-BATCH_SIZE = 64  # like in the paper
-IMAGE_SIZE = (224, 224)  # although not ideal this size greatly reduces the training time
-INPUT_SHAPE = IMAGE_SIZE + (3,)  # plus 3 because images are rgb
-
 CLASS_INT_TO_STR = {
     0: 'acanthosis nigricans',
     1: 'acne',
