@@ -1,5 +1,5 @@
 
-BATCH_SIZE = 256  # like in the paper
+BATCH_SIZE = 64  # like in the paper
 IMAGE_SIZE = (224, 224)  # although not ideal this size greatly reduces the training time
 INPUT_SHAPE = IMAGE_SIZE + (3,)  # plus 3 because images are rgb
 
