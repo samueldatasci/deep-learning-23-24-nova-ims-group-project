@@ -133,8 +133,7 @@ if __name__ == '__main__':
     # demonstration
     from tensorflow.keras.models import load_model  # type: ignore
     
-    # img_path = r'C:\Users\fmppo\Desktop\MSDSAA\Y1\S2\Deep Learning\Group Project\data\train\pilar cyst\6c770bbf5b1394537ba9cb4c16050fe4.jpg'
-    img_path = r'C:\Users\fmppo\Desktop\MSDSAA\Y1\S2\Deep Learning\Group Project\data\train\acne\25d6287a7029492939284f43d0a626b0.jpg'
+    img_path = r'C:\Users\fmppo\Desktop\MSDSAA\Y1\S2\Deep Learning\deep-learning-23-24-nova-ims-group-project\data\train\pilar cyst\6c770bbf5b1394537ba9cb4c16050fe4.jpg'
     batched_img_array = read_image_to_array(img_path)
 
     model = load_model('model_dir/models/Xception-transfer-model.h5')

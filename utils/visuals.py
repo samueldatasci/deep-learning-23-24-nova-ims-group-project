@@ -8,7 +8,7 @@ from typing import Union
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
-from .constants import BATCH_SIZE, CLASS_INT_TO_STR
+from .constants import CLASS_INT_TO_STR
 
 
 class SampleVisuals:
@@ -19,6 +19,7 @@ class SampleVisuals:
     
     @staticmethod
     def show_random_sample(data: tf.data.Dataset,
+                           batch_size: int,
                            label_mode: str = 'categorical',
                            grid_dim: tuple = (3, 3)) -> None:
         """
@@ -35,7 +36,7 @@ class SampleVisuals:
         class_names = data.class_names
         skips = np.random.choice(range(len(data)))
         plt.figure(figsize=(10, 10))
-        for images, labels in data.skip(skips).take(BATCH_SIZE):
+        for images, labels in data.skip(skips).take(batch_size):
             for i in range(n):
                 ax = plt.subplot(height, width, i + 1)
                 ax.imshow(images[i].numpy().astype("uint8"))
